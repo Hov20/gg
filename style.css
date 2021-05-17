@@ -1,0 +1,36 @@
+#box {
+    margin-left: 30%;
+    width: 600px;
+    height: 200px;
+    background-color: blue;
+    /* transform: rotate(180deg); */
+    /* transform: translate(50%, 50%); */
+    /* transform: scale(2,2); */
+    /* transform: skewX(45deg); */
+   /* transform: skewY(45deg); */
+   transform: rotateZ(0deg);
+   transition: 40s;
+}
+#box:hover {
+    transform: rotateZ(360000deg);
+}
+#free {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    opacity: 1;
+    animation-name: blank;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes blank {
+    258% {background-color: orange;
+    }
+    50% {background-color: yellow;
+    }
+    75% {background-color: green;
+    }
+    100% {background-color: blue;
+    }
+}
